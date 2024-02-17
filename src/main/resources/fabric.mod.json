@@ -2,25 +2,33 @@
   "schemaVersion": 1,
   "id": "fb",
   "version": "${version}",
-
   "name": "FutureBattlegear",
   "description": "",
-  "authors": [],
+  "authors": [
+    "MinecraftFox",
+    "ZTY"
+  ],
   "contact": {},
-
   "license": "LGPL-3.0",
   "icon": "assets/fb/icon.png",
-
   "environment": "*",
-  "entrypoints": {},
-
-      "mixins": [
-        "fb.mixins.json"
-      ],
-
+  "entrypoints": {
+    "fabric-datagen": [
+      "future.battlegear.FutureBattlegearDataGeneration"
+    ],
+    "client": [
+      "future.battlegear.client.FutureBattlegearClient"
+    ],
+    "main": [
+      "future.battlegear.FutureBattlegear"
+    ]
+  },
+  "mixins": [
+    "fb.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
+    "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
 }
