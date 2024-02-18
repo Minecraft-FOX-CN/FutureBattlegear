@@ -2,7 +2,13 @@ package future.battlegear;
 
 import future.battlegear.registry.ModItemGroup;
 import future.battlegear.registry.ModItems;
+import future.battlegear.registry.ModKeyBinding;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.fabricmc.fabric.api.event.client.ClientTickCallback;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
+import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
+import net.fabricmc.fabric.api.event.server.ServerTickCallback;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +32,7 @@ public class FutureBattlegear implements ModInitializer {
         // Proceed with mild caution.
         ModItems.registerModItems();
         ModItemGroup.registerModItemGroup();
+        ModKeyBinding.registerModKeyBinding();
         LOGGER.info("HA!");
     }
 }

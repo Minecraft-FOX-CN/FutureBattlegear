@@ -1,4 +1,4 @@
-package future.battlegear.common.materials;
+package future.battlegear.common.material;
 
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;

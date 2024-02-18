@@ -1,7 +1,7 @@
 package future.battlegear.registry;
 
 import future.battlegear.FutureBattlegear;
-import future.battlegear.common.materials.FutureBattlegearArmorMaterial;
+import future.battlegear.common.material.FutureBattlegearArmorMaterial;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
